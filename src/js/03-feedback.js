@@ -25,7 +25,7 @@ window.addEventListener("load", ()=>{
     const msg = JSON.parse(localStorage.getItem("feedback-form-state"));
     
 
-    if (msg !== null && (msg.email !== "" || msg.message !== "")){
+    if (msg !== null){
         form.email.value = msg.email;
         form.message.value = msg.message;
     }
