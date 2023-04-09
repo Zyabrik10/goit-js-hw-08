@@ -20,19 +20,3 @@ player.on('timeupdate',
         });
     }, 1000) 
 );
-
-player.on('play', function() {
-        player.getCurrentTime().then(function(seconds) {
-            localStorage.setItem("videoplayer-current-time", seconds);
-        }).catch(function(error) {
-            throw error;
-        });
-});
-
-player.on('pause', function() {
-        player.getCurrentTime().then(function(seconds) {
-            localStorage.setItem("videoplayer-current-time", seconds);
-        }).catch(function(error) {
-            throw error;
-        });
-});
